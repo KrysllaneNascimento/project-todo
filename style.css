@@ -9,15 +9,16 @@
 }
 
 body{
-    background-color: #ebc589;
+    background-image: linear-gradient(120deg, #664cad, #7ad7f0);
     background-size: cover;
+    background-attachment: fixed;
     
 }
 
 button{
     background-color: #FDFDFD;
-    color: #a3784e;
-    border: 2px solid #a3784e;
+    color: #7d6ed4;
+    border: 2px solid #7d6ed4;
     padding: .3rem .6rem ;
     font-size: 1rem;
     cursor: pointer;
@@ -27,14 +28,13 @@ button{
     transition: 0.4s;
 }
 button:hover{
-    background-color: #a3784e;
-    color: #FFF;
+    background-color: #7d6ed4;
 }
 button:hover > i{
     color: #FFF;
 }
 button i {
-    color:#a3784e;
+    color:#7d6ed4;
     font-weight: bold;
     pointer-events: none;
 }
@@ -49,16 +49,20 @@ input, select {
 
 .todo-container{
     max-width: 450px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     padding: 1.5rem;
     border-radius: 15px;
     background-color: #FDFDFD;
 }
 
-.todo-container header{
+header{
     text-align: center;
     padding: 0 1rem 1rem;
-    border-bottom: 1px solid #CCC;
+}
+header h1{
+    color: #FFF;
+    margin-top: 2em;
+    font-size: 40pt;
 }
 
 /* Todo form */
@@ -83,6 +87,11 @@ input, select {
 
 #cancel-edit-btn{
     margin-top: 1rem;
+    color: black;
+}
+
+#cancel-edit-btn:hover{
+    color: #FFF;
 }
 
 /* Todo toolbar */
@@ -144,10 +153,10 @@ input, select {
     margin-left: 0.4rem;
 }
 .done{
-    background-color:#936537;
+    background-color:#a89ede;
 }
 .done h3{
-    color: black;
+    color: #FFF;
     text-decoration: line-through;
     font-style: italic;
 }
